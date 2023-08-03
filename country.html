@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Selection</title>
+    <link rel="stylesheet" href="country.css">
+
+</head>
+
+<body>
+    <div class="country">
+        <div class="card">
+            <h1>Select a Country:</h1>
+
+            <select id="countrySelect" onchange="showCapital()">
+                <option value="">Select a country</option>
+                <option value="india">India</option>
+                <option value="usa">United States</option>
+                <option value="france">Bangladesh</option>
+                <option value="Denmark">Denmark</option>
+                <option value="sweden">Sweden</option>
+            </select>
+            <p id="capitalDisplay">Select one to show capital name</p>
+
+        </div>
+    </div>
+
+    <script>
+        function showCapital() {
+            const selectElement = document.getElementById("countrySelect");
+            const selectedCountry = selectElement.value;
+            let capital = "";
+
+            if (selectedCountry === "india") {
+                capital = "Delhi";
+            } else if (selectedCountry === "usa") {
+                capital = "Washington D.C.";
+            } else if (selectedCountry === "france") {
+                capital = "Dhaka";
+            } else if (selectedCountry === "Denmark") {
+                capital = "copenhagan";
+            } else if (selectedCountry === "sweden") {
+                capital = "stockholm";
+            } else {
+                capital = "Select a country to see its capital";
+            }
+
+            document.getElementById("capitalDisplay").innerText = capital;
+        }
+    </script>
+</body>
+
+</html>

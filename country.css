@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+
+
+
+}
+
+h1 {
+    margin-bottom: 60px;
+
+}
+
+
+
+.country {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.card {
+    background: rgb(51, 185, 173);
+    backdrop-filter: blur(8px);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#countrySelect {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+    width: 300px;
+}
+
+#countrySelect option {
+    padding: 8px;
+   
+}
+
+#capitalDisplay {
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 4px;
+}

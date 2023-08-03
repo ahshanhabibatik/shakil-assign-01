@@ -1,0 +1,33 @@
+table {
+    width: 100%;
+    border: 2px solid;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 2px solid;
+    text-align: center;
+}
+
+span {
+    font-weight: 600;
+}
+
+.odd {
+    background-color: #fc3200;
+
+}
+
+.even {
+    background-color: #e7edf4;
+}
+th {
+    background-color: #eff31b;
+
+}
+
+.lab {
+    border-bottom: 2px solid;
+
+}
